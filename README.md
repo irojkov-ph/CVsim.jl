@@ -13,7 +13,7 @@
 <!-- ![Package Logo](package_logo.png) -->
 
 CVsim.jl is a Julia package for simulating continuous variable quantum systems, with a focus on studying quantum information processing using bosonic codes such as Gottesman-Kitaev-Preskill (GKP), Cat or Binomial states. Unlike traditional approaches that employ the Fock basis representation of states, this package utilizes the first quantization method, specifically sampling the position or momentum quadratures.
-
+ 
 ## Features
 
 - Simulation of continuous variable quantum systems
