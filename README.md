@@ -109,26 +109,26 @@ For detailed documentation, please refer to the [documentation folder](./docs) i
 This package was developed and employed for the first time for studying gates between two finite-energy GKP states (see [Rojkov et al. (2023)](https://doi.org/10.48550/arXiv.2305.05262)). If you use this package in the context of a potential publication we would be pleased if you cite our work as well as the package itself using the following bibtex entries
 
 ```bibtex
-   @misc{rojkov2023twoqubit,
-         title          = {Two-qubit operations for finite-energy Gottesman-Kitaev-Preskill encodings}, 
-         author         = {Ivan Rojkov and Paul Moser R\"{o}ggla and Martin Wagener and Moritz Fontbot\'{e}-Schmidt and Stephan Welte and Jonathan Home and Florentin Reiter},
-         year           = {2023},
-         eprint         = {2305.05262},
-         archivePrefix  = {arXiv},
-         primaryClass   = {quant-ph}
-   }
+  @article{two_qubit_rojkov_2023,
+    title     = {Two-qubit operations for finite-energy Gottesman-Kitaev-Preskill encodings}, 
+    author    = {Ivan Rojkov and Paul Moser R\"{o}ggla and Martin Wagener and Moritz Fontbot\'{e}-Schmidt and Stephan Welte and Jonathan Home and Florentin Reiter},
+    journal   = {arXiv:quant-ph/2305.05262},
+    year      = {2023},
+    month     = may,
+  }
 ```
 
 ```bibtex
-   @software{rojkov2023cvsim,
-         title        = {CVsim.jl: Continuous variable quantum system simulation package}, 
-         author       = {Ivan Rojkov},
-         year         = {2023},
-         publisher    = {Zenodo},
-         version      = {v0.1},
-         doi          = {10.5281/zenodo.???????},
-         url          = {https://doi.org/10.5281/zenodo.???????}
-   }
+  @software{cvsim_rojkov_2024,
+    author    = {Rojkov, Ivan},
+    title     = {CVsim.jl: Continuous variable quantum system simulation package},
+    month     = jul,
+    year      = 2024,
+    publisher = {Zenodo},
+    version   = {v0.1.0},
+    doi       = {10.5281/zenodo.13127577},
+    url       = {https://doi.org/10.5281/zenodo.13127577}
+  }
 ```
 
 ## Contributing
