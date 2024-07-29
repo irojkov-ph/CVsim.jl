@@ -133,8 +133,6 @@ function albert_preparation(P::CVsim_Parameters;
                             Δ::Float64 = 0.37,
                             n_peaks::Int = 51,
                             GKP_1::Bool = false)
-    
-    # displace(α) = exp(1im*  √2  * dense( imag(α) * position(P.b) - real(α) * momentum(P.b) ))
 
     displace(α) = exp(-1im*imag(α)*real(α)) * 
                   LazyProduct( exp(1im*√2.0 * dense( imag(α)*position(P.b))), P.Tpm,
@@ -238,7 +236,7 @@ function default_GKP_preparation(P::CVsim_Parameters;
                                  n_peaks::Int = 20
                                 ) 
   
-  # Determine the if one wants to create a minus state
+  # Determine if one wants to create a minus state
   minus_state = ( parity && (period == sqrt(pi)) )
   parity_term(ind) = (-1)^(ind*minus_state)
   

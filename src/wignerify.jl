@@ -39,7 +39,7 @@ function wignerify(mat::Matrix{ComplexF64})
 
   # Some constants
   wig_Np = length(mat[:,1])
-  wig_pshift = wig_Np ÷ 2     # integer division
+  wig_pshift = wig_Np ÷ 2
 
   # Extract anti-diagonals from mat and organizing them in columns
   mat_skew = zeros(ComplexF64,(wig_Np, wig_Np))
@@ -59,7 +59,7 @@ function wignerify(mat::Matrix{ComplexF64})
   # Fourier transform along the columns
   wigner = mapslices(x->fft_op*x, mat_skew; dims=1)
 
-  # execute a linear phase shift which is equivalent to a pixel shift on
+  # Execute a linear phase shift which is equivalent to a pixel shift on
   # mat_skew (but the even antidiagonals get a half-odd pixel shift)
   shift_amt = ([0:wig_Np-1;] .- (wig_pshift)) .* [0:2:2*wig_Np-2;]'
   wigner .*= exp.((2im*pi / wig_Np) .* shift_amt)

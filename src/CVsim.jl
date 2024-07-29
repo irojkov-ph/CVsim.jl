@@ -5,11 +5,11 @@ module CVsim
   using Permutations
   using LinearAlgebra
 
-  # Parameters of the simulations
+  # Parameters of the CV simulations
   export CVsim_Parameters
   include("parameters.jl")
 
-  # Fast calculation of the Wigner quasiprobability
+  # Wigner quasiprobability functions
   export wignerify
   include("wignerify.jl")
 
